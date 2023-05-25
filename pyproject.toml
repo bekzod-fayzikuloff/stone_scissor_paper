@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "stone-scissor-paper"
+version = "0.1.0"
+description = ""
+authors = ["fayzikuloff.b <fayzikuloff.b@gmail.com>"]
+readme = "README.md"
+packages = [{include = "stone_scissor_paper"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+prettytable = "^3.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

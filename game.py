@@ -39,8 +39,9 @@ class Game:
                 print(f"Your move: {self.moves[user_move - 1]}")
                 print(f"Computer move: {self._sign.chosen}")
                 print(Rules.outcome(self._sign.chosen, self.moves[user_move - 1], self.moves))
-                print(f"HMAC KEY: {self._sign.hmac_key}")
+                print(f"HMAC KEY: {self._sign.hmac_key}", end="\n\n")
                 self._sign.change_sign()
+                print(f"NEW HMAC: {self._sign.hmac}\n")
 
 
 class Rules:

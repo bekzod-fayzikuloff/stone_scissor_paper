@@ -13,6 +13,7 @@ class Validator:
             print("Moves should be more than 2 and be ord")
             return False, 1
         elif len(list(set(self.moves))) != len(self.moves):  # check for duplicates
+            print("The steps should not be repeated")
             return False, 1
         return self.moves
 
